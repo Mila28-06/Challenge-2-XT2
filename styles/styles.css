@@ -1,0 +1,148 @@
+*{
+	font-family: 'Quicksand';
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	min-width: 100vh;
+}
+header{
+	color: white;
+	text-align: center;
+	justify-content: center;
+}
+header>p{
+	margin-top: 150px;
+	font-size: 40px;
+}
+.klok .cijfer{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.klok{
+	position: fixed;
+	margin: auto auto;
+	width: 500px;
+	height: 500px;
+	background-color: rgba(255, 255, 255, .8);
+	border-radius: 50%;
+	border: 5px solid white;	
+	position: relative;
+}
+
+
+
+.klok .n1{transform: rotate(30deg);}
+.klok .n2{transform: rotate(60deg);}
+.klok .n3{transform: rotate(90deg);}
+.klok .n4{transform: rotate(120deg);}
+.klok .n5{transform: rotate(150deg);}
+.klok .n6{transform: rotate(180deg);}
+.klok .n7{transform: rotate(210deg);}
+.klok .n8{transform: rotate(240deg);}
+.klok .n9{transform: rotate(270deg);}
+.klok .n10{transform: rotate(300deg);}
+.klok .n11{transform: rotate(330deg);}
+
+ .wijzer {
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	transform-origin: bottom;
+	transform: translateX(-50%);
+
+}
+
+.wijzer.uur{
+	width: 10px;
+	height: 35%;
+	background-color: black;
+}
+
+.wijzer.minuten{
+	width: 6px;
+	height: 40%;
+	background-color: black;
+}
+
+.wijzer.seconden{
+	width: 3px;
+	height: 45%;
+	background-color: purple;
+}
+.klok::after{
+	content: '';
+	position:absolute;
+	left:50%;
+	top: 50%;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: black;
+	transform: translate(-50%, -50%);
+}
+.ochtend{
+	background-image: url("images/morning.png");
+	transition: background-image 4s cubic-bezier(0.37, 0, 0.63, 1) ;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+}
+.middag{
+	background-image: url("images/middag.png");
+	transition: background-image 4s cubic-bezier(0.37, 0, 0.63, 1);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+}
+.avond{
+	background-image: url("images/avond.png");
+	transition: background-image 4s cubic-bezier(0.37, 0, 0.63, 1);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+}
+
+.nacht{
+	background-image: url("images/nacht.png");
+	transition: background-image 4s cubic-bezier(0.45, 0, 0.55, 1);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+}
+
+@media only screen and (min-width: 600px)(max-width: 900px){ 
+	.clock{
+			background-color: blue;
+		}
+	header>p{
+		color: blue;
+	}
+}
+@media only screen and (min-width: 900px)(max-width: 1200px){
+	.clock{
+		height: 
+		width:;
+	}
+
+}
+@media only screen and (min-width: 1200px){
+
+}
+
+
+

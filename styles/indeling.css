@@ -1,0 +1,28 @@
+.container{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns:auto 500px auto;
+	grid-template-rows: 300px 500px 180px;
+	grid-template-areas:
+	"header header header"
+	"sideleft main sideright"
+	"footer footer footer"
+	;
+
+}
+header{
+	grid-area:header;
+}
+.side1{
+	grid-area:sideleft;
+}
+.side2{
+	grid-area:sideright;
+}
+main{
+	grid-area:main;
+}
+footer{
+	grid-area:footer;
+}
