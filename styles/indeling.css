@@ -3,7 +3,7 @@
 	height: 100%;
 	display: grid;
 	grid-template-columns:auto 500px auto;
-	grid-template-rows: 300px 500px 180px;
+	grid-template-rows: 300px 500px 150px;
 	grid-template-areas:
 	"header header header"
 	"sideleft main sideright"
@@ -26,3 +26,24 @@ main{
 footer{
 	grid-area:footer;
 }
+@media only screen and (min-width: 600px){ 
+	.container{
+		grid-template-columns:auto 600px auto;
+		grid-template-rows: 300px 600px 200px;
+	}
+
+}
+@media only screen and (min-width: 900px){ 
+	.container{
+
+		grid-template-columns:auto 800px auto;
+		grid-template-rows: 400px 800px 400px;
+
+	}
+@media only screen and (min-width: 1200px){ 
+	.container{
+
+		grid-template-columns:auto 500px auto;
+		grid-template-rows: 200px 500px 100px;
+
+	}

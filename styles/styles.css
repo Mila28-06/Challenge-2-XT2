@@ -7,15 +7,23 @@ body{
 	justify-content: center;
 	min-width: 100vh;
 }
+
+
 header{
 	color: white;
 	text-align: center;
 	justify-content: center;
 }
+
 header>p{
 	margin-top: 150px;
 	font-size: 40px;
+	margin-bottom: 0px;
 }
+header>p:nth-child(2){
+	margin-top: 0px;
+}
+
 .klok .cijfer{
 	position: absolute;
 	width: 100%;
@@ -48,6 +56,7 @@ header>p{
 .klok .n10{transform: rotate(300deg);}
 .klok .n11{transform: rotate(330deg);}
 
+
  .wijzer {
 	position: absolute;
 	bottom: 50%;
@@ -76,6 +85,7 @@ header>p{
 	height: 45%;
 	background-color: purple;
 }
+
 .klok::after{
 	content: '';
 	position:absolute;
@@ -87,6 +97,8 @@ header>p{
 	background-color: black;
 	transform: translate(-50%, -50%);
 }
+
+
 .ochtend{
 	background-image: url("images/morning.png");
 	transition: background-image 4s cubic-bezier(0.37, 0, 0.63, 1) ;
@@ -125,22 +137,35 @@ header>p{
 	background-color: #464646;
 }
 
-@media only screen and (min-width: 600px)(max-width: 900px){ 
-	.clock{
-			background-color: blue;
+@media only screen and (min-width: 600px){ 
+	.klok{
+		width: 600px;
+		height: 600px;
+		font-size: 30px;
 		}
 	header>p{
-		color: blue;
+		font-size: 45px;
 	}
 }
-@media only screen and (min-width: 900px)(max-width: 1200px){
-	.clock{
-		height: 
-		width:;
+@media only screen and (min-width: 900px){
+	.klok{
+		width: 800px;
+		height: 800px;
+		}
+	header>p{
+		font-size: 60px;
 	}
 
 }
 @media only screen and (min-width: 1200px){
+	.klok{
+		width: 500px;
+		height: 500px;
+		}
+	header>p{
+		font-size: 40px;
+		margin-top: 60px;
+	}
 
 }
 
