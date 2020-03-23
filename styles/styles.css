@@ -8,7 +8,6 @@ body{
 	min-width: 100vh;
 }
 
-
 header{
 	color: white;
 	text-align: center;
@@ -20,10 +19,11 @@ header>p{
 	font-size: 40px;
 	margin-bottom: 0px;
 }
+
 header>p:nth-child(2){
 	margin-top: 0px;
 }
-
+/*De klok*/
 .klok .cijfer{
 	position: absolute;
 	width: 100%;
@@ -43,7 +43,7 @@ header>p:nth-child(2){
 }
 
 
-
+/*De nummers op de klok*/
 .klok .n1{transform: rotate(30deg);}
 .klok .n2{transform: rotate(60deg);}
 .klok .n3{transform: rotate(90deg);}
@@ -56,7 +56,7 @@ header>p:nth-child(2){
 .klok .n10{transform: rotate(300deg);}
 .klok .n11{transform: rotate(330deg);}
 
-
+/*De wijzer*/
  .wijzer {
 	position: absolute;
 	bottom: 50%;
@@ -85,7 +85,7 @@ header>p:nth-child(2){
 	height: 45%;
 	background-color: purple;
 }
-
+/*Het middelpuntje van de klok*/
 .klok::after{
 	content: '';
 	position:absolute;
@@ -98,7 +98,7 @@ header>p:nth-child(2){
 	transform: translate(-50%, -50%);
 }
 
-
+/*De achtergronden voor de fase van de dag*/
 .ochtend{
 	background-image: url("images/morning.png");
 	transition: background-image 4s cubic-bezier(0.37, 0, 0.63, 1) ;
@@ -142,31 +142,33 @@ header>p:nth-child(2){
 		width: 600px;
 		height: 600px;
 		font-size: 30px;
-		}
+	}
+
 	header>p{
 		font-size: 45px;
 	}
 }
+
 @media only screen and (min-width: 900px){
 	.klok{
 		width: 800px;
 		height: 800px;
-		}
+	}
+
 	header>p{
 		font-size: 60px;
 	}
-
 }
 @media only screen and (min-width: 1200px){
 	.klok{
 		width: 500px;
 		height: 500px;
-		}
+	}
+
 	header>p{
 		font-size: 40px;
 		margin-top: 60px;
 	}
-
 }
 
 

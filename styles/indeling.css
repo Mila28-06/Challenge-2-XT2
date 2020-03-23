@@ -9,41 +9,46 @@
 	"sideleft main sideright"
 	"footer footer footer"
 	;
-
 }
+
 header{
 	grid-area:header;
 }
+
 .side1{
 	grid-area:sideleft;
 }
+
 .side2{
 	grid-area:sideright;
 }
+
 main{
 	grid-area:main;
 }
+
 footer{
 	grid-area:footer;
 }
+
+
 @media only screen and (min-width: 600px){ 
 	.container{
 		grid-template-columns:auto 600px auto;
 		grid-template-rows: 300px 600px 200px;
 	}
-
 }
+
 @media only screen and (min-width: 900px){ 
 	.container{
-
 		grid-template-columns:auto 800px auto;
 		grid-template-rows: 400px 800px 400px;
-
 	}
+}
+
 @media only screen and (min-width: 1200px){ 
 	.container{
-
 		grid-template-columns:auto 500px auto;
 		grid-template-rows: 200px 500px 100px;
-
 	}
+}
